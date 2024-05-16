@@ -1,0 +1,90 @@
+body {
+    font-family: Cambria;
+}
+
+.parent-container {
+    margin: 0 2rem;
+}
+
+.container {
+    height: 800px;
+}
+
+nav {
+    text-align: end;
+    position: sticky;
+    top: 0;
+    padding: 1px 5px;
+    background-color: #ccc;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0 10px;
+}
+
+nav ul > li {
+    display: inline-block;
+}
+
+nav ul > li > a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav ul > li > a:hover {
+    cursor: pointer;
+    font-size: 15px;
+    color: #f00;
+}
+
+.pageload-container {
+    background-color: #333;
+    color: #fff;
+}
+
+.animate {
+    margin: 1rem 2rem;
+}
+
+.animate button {
+    padding: 6px 10px;
+    background-color: #ff0;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 1rem 0;
+    animation: css 10s linear 0.5s infinite;
+}
+
+@keyframes css {
+    0% {background-color: #0f0; transform: translate(0px);}
+    25% {background-color: #0ff; transform: translate(150px) rotate(0deg);}
+    50% {background-color: dodgerblue; transform: translate(300px) rotate(-30deg);}
+    75% {background-color: slateblue; transform: translate(150px) rotate(360deg)}
+    100% {background-color: #00f; transform: translate(0px) rotate(0deg)}
+}
+
+.pageload {
+    margin: 0 2rem;
+    padding: 10rem 0;
+}
+.load {
+    width: 35px;
+    height: 35px;
+    border: 5px solid white;
+    border-top-color: dodgerblue;
+    border-left-color: dodgerblue;
+    border-bottom-color: dodgerblue;
+    border-radius: 100vh;
+    margin: 10rem auto;
+    animation: load 2s linear infinite;
+}
+
+@keyframes load {
+    from {transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
